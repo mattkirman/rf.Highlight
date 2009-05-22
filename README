@@ -1,0 +1,41 @@
+/**
+ * rf.Highlight jQuery plugin
+ * 
+ * @version		1.0 (05/22/2009)
+ * @author 		Matt Kirman <http://mattkirman.com> <http://twitter.com/mattkirman>
+ * @requires 	jQuery v1.3 or later (May work with previous versions. Not tested)
+ * @link		http://mattkirman.com/2009/04/11/jquery-plugin-rfhighlight/
+ *
+ * 
+ * An implementation of the famous "Yellow Fade Technique" as a jQuery plugin.
+ * 
+ * This version is reliant on rgba support in the client's browser. While not
+ * ideal, as this isn't supported in all browsers, I am not in any hurry to fix it.
+ * 
+ *
+ * Usage: $('#element').highlight(options:Object);
+ * 
+ * Options:
+ * 
+ * color (array | default: [255, 255, 187])
+ * The rgb color of the highlight. Yep, it doesn't actually have to be yellow.
+ * 
+ * duration (int | default: 400)
+ * How long the fade lasts for.
+ * 
+ * wait (int | default: 3000)
+ * The initial pause before the element starts to fade. During this time the element
+ * will still be highlighted.
+ * 
+ * quality (int | default: 20)
+ * How many steps do you want the fade to be rendered in. You shouldn't need to
+ * change this as 20 is a reasonable amount.
+ *
+ * 
+ * For more indepth discussion and customisation visit the author's blog post
+ * at http://mattkirman.com/2009/04/11/jquery-plugin-rfhighlight/
+ *
+ * 
+ * Tested in Firefox & Safari. Should work fine in IE 8.
+ * Any browser strangeness, please report. Contributions are more than welcome.
+ */
